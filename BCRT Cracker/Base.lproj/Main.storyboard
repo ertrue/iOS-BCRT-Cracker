@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +17,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boardBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Tmu-ap-31S">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PDN-jZ-KUP">
+                                <rect key="frame" x="20" y="526" width="560" height="54"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qWX-WD-RVR">
+                                <rect key="frame" x="20" y="284" width="560" height="227"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tmu-ap-31S" secondAttribute="bottom" id="4k7-4V-Fjc"/>
+                            <constraint firstItem="PDN-jZ-KUP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8vt-Nw-NgE"/>
+                            <constraint firstItem="Tmu-ap-31S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="DmY-dg-qTR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PDN-jZ-KUP" secondAttribute="bottom" constant="20" id="Tf7-CJ-b45"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tmu-ap-31S" secondAttribute="trailing" constant="-20" id="gO2-Rb-LGI"/>
+                            <constraint firstItem="Tmu-ap-31S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="tgK-KM-bnN"/>
+                            <constraint firstItem="PDN-jZ-KUP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y9F-o6-twa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="338" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="boardBackground" width="180" height="410"/>
+    </resources>
 </document>

@@ -13,6 +13,9 @@
 		5B649E031BE5E99500DAAF7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B649E021BE5E99500DAAF7B /* Assets.xcassets */; };
 		5B649E061BE5E99500DAAF7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B649E041BE5E99500DAAF7B /* LaunchScreen.storyboard */; };
 		5B649E111BE5E99500DAAF7B /* BCRT_CrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B649E101BE5E99500DAAF7B /* BCRT_CrackerTests.swift */; };
+		5B6ADFDF1BE5F6A400DBBFBF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFDE1BE5F6A400DBBFBF /* Card.swift */; };
+		5B6ADFE11BE5F8E700DBBFBF /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFE01BE5F8E700DBBFBF /* Setting.swift */; };
+		5B6ADFE51BE747F000DBBFBF /* CurrentHandControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFE41BE747F000DBBFBF /* CurrentHandControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		5B649E0C1BE5E99500DAAF7B /* BCRT CrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BCRT CrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B649E101BE5E99500DAAF7B /* BCRT_CrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCRT_CrackerTests.swift; sourceTree = "<group>"; };
 		5B649E121BE5E99500DAAF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B6ADFDE1BE5F6A400DBBFBF /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5B6ADFE01BE5F8E700DBBFBF /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		5B6ADFE41BE747F000DBBFBF /* CurrentHandControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentHandControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				5B649DFB1BE5E99500DAAF7B /* AppDelegate.swift */,
+				5B6ADFDE1BE5F6A400DBBFBF /* Card.swift */,
+				5B6ADFE01BE5F8E700DBBFBF /* Setting.swift */,
 				5B649DFD1BE5E99500DAAF7B /* ViewController.swift */,
 				5B649DFF1BE5E99500DAAF7B /* Main.storyboard */,
+				5B6ADFE41BE747F000DBBFBF /* CurrentHandControl.swift */,
 				5B649E021BE5E99500DAAF7B /* Assets.xcassets */,
 				5B649E041BE5E99500DAAF7B /* LaunchScreen.storyboard */,
 				5B649E071BE5E99500DAAF7B /* Info.plist */,
@@ -198,6 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B649DFE1BE5E99500DAAF7B /* ViewController.swift in Sources */,
+				5B6ADFE11BE5F8E700DBBFBF /* Setting.swift in Sources */,
+				5B6ADFDF1BE5F6A400DBBFBF /* Card.swift in Sources */,
+				5B6ADFE51BE747F000DBBFBF /* CurrentHandControl.swift in Sources */,
 				5B649DFC1BE5E99500DAAF7B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +400,7 @@
 				5B649E171BE5E99500DAAF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B649E181BE5E99500DAAF7B /* Build configuration list for PBXNativeTarget "BCRT CrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +409,7 @@
 				5B649E1A1BE5E99500DAAF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
