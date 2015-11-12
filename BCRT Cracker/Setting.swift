@@ -18,6 +18,9 @@ class BaseSetting {
     var playerWinAward: float_t = 1.0
     var tieWinAward: float_t = 8.0
     var pairWinAward: float_t = 12.0
+    init () {
+        return
+    }
     init (deckCnt: Int?, bankerWinAward: float_t?, playerWinAward: float_t?, tieWinAward: float_t?, pairWinAward: float_t?) {
         if ((deckCnt) != nil) {
             self.deckCnt = deckCnt!
@@ -40,6 +43,7 @@ class BaseSetting {
 // MARK: UserPreference
 
 class UserPreference:BaseSetting {
+    let testRound: Int = 100000
     var threshold: float_t = 0.03
 // The threshold is the final solution for to judge the bet
     func bankerBetThreshold() -> float_t {

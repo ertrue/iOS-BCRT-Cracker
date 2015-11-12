@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="numberInputerView" customModule="BCRT_Cracker" customModuleProvider="target">
+            <connections>
+                <outlet property="BankerCard1" destination="BXt-bL-IDP" id="jco-SM-lHi"/>
+                <outlet property="BankerCard2" destination="Tp8-Hi-IbH" id="66b-EA-nl2"/>
+                <outlet property="BankerCard3" destination="5kv-wI-9Cg" id="1r2-B5-zPs"/>
+                <outlet property="PlayerCard1" destination="F6H-bf-VLa" id="snB-KR-rW6"/>
+                <outlet property="PlayerCard2" destination="Axp-dg-xWq" id="VUd-xT-RJV"/>
+                <outlet property="PlayerCard3" destination="QDa-rw-p25" id="Ubr-iN-osf"/>
+                <outlet property="cardStackView" destination="Hk6-FP-Zl4" id="Ppb-w2-K5t"/>
+                <outlet property="titleBanker" destination="DC2-ss-9h4" id="cuo-f6-K26"/>
+                <outlet property="titleImage" destination="pEU-49-dyd" id="8MW-P1-Ya5"/>
+                <outlet property="titlePlayer" destination="JJ8-fs-Mna" id="aDg-SY-LaI"/>
+                <outlet property="titleStackView" destination="75H-gU-AV9" id="3fF-yR-q63"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="560" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardtitle" translatesAutoresizingMaskIntoConstraints="NO" id="pEU-49-dyd">
+                    <rect key="frame" x="0.0" y="0.0" width="560" height="40"/>
+                    <animations/>
+                    <rect key="contentStretch" x="0.0" y="0.40000000000000002" width="1" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="p7z-D4-0dn"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75H-gU-AV9">
+                    <rect key="frame" x="0.0" y="0.0" width="560" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ8-fs-Mna">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="28"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC2-ss-9h4">
+                            <rect key="frame" x="280" y="0.0" width="280" height="40"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="28"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstItem="JJ8-fs-Mna" firstAttribute="width" secondItem="DC2-ss-9h4" secondAttribute="width" id="28f-be-E2I"/>
+                        <constraint firstAttribute="height" constant="40" id="3MF-1t-bor"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hk6-FP-Zl4">
+                    <rect key="frame" x="0.0" y="42" width="560" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of5-cT-sVJ">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6H-bf-VLa">
+                            <rect key="frame" x="80" y="0.0" width="40" height="40"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="RGj-Qw-wct"/>
+                                <constraint firstAttribute="height" constant="40" id="uqV-0s-iJd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="36"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" text="J" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axp-dg-xWq">
+                            <rect key="frame" x="120" y="0.0" width="40" height="40"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Nyc-Ny-AcF"/>
+                                <constraint firstAttribute="height" constant="40" id="oqq-KJ-bwo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="36"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDa-rw-p25">
+                            <rect key="frame" x="160" y="0.0" width="40" height="40"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="E1u-oc-dvW"/>
+                                <constraint firstAttribute="width" constant="40" id="Kfc-AJ-9Tp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="36"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXr-iM-aDm">
+                            <rect key="frame" x="200" y="0.0" width="80" height="40"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2c-By-bQd">
+                            <rect key="frame" x="280" y="0.0" width="80" height="40"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXt-bL-IDP">
+                            <rect key="frame" x="360" y="0.0" width="40" height="40"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Mie-Go-uTf"/>
+                                <constraint firstAttribute="height" constant="40" id="sGz-XX-9CW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="36"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" text="J" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tp8-Hi-IbH">
+                            <rect key="frame" x="400" y="0.0" width="40" height="40"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Mmz-tW-C72"/>
+                                <constraint firstAttribute="width" constant="40" id="wvf-r4-ezI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="36"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kv-wI-9Cg">
+                            <rect key="frame" x="440" y="0.0" width="40" height="40"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Gds-v9-1AD"/>
+                                <constraint firstAttribute="width" constant="40" id="MhE-SC-73i"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="36"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8s-nw-fz0">
+                            <rect key="frame" x="480" y="0.0" width="80" height="40"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstItem="Of5-cT-sVJ" firstAttribute="width" secondItem="e8s-nw-fz0" secondAttribute="width" id="AWh-c3-dLe"/>
+                        <constraint firstItem="Of5-cT-sVJ" firstAttribute="width" secondItem="fXr-iM-aDm" secondAttribute="width" id="KJS-hd-lBN"/>
+                        <constraint firstItem="Of5-cT-sVJ" firstAttribute="width" secondItem="I2c-By-bQd" secondAttribute="width" id="lDl-9L-Ve2"/>
+                        <constraint firstAttribute="height" constant="40" id="nZe-Wl-gQm"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.45975760339999999" green="0.70972240389999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hk6-FP-Zl4" secondAttribute="trailing" id="4kD-WA-cGU"/>
+                <constraint firstItem="75H-gU-AV9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6GK-Um-j8G"/>
+                <constraint firstItem="Hk6-FP-Zl4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="D3h-wf-AcM"/>
+                <constraint firstItem="75H-gU-AV9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EAv-Wu-Loe"/>
+                <constraint firstItem="pEU-49-dyd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Hf6-Fh-jA0"/>
+                <constraint firstItem="75H-gU-AV9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MY4-Bk-Y88"/>
+                <constraint firstItem="pEU-49-dyd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="May-ov-HOg"/>
+                <constraint firstItem="pEU-49-dyd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Uhe-Z9-aYb"/>
+                <constraint firstAttribute="trailing" secondItem="pEU-49-dyd" secondAttribute="trailing" id="fs9-pA-cx7"/>
+                <constraint firstAttribute="trailing" secondItem="75H-gU-AV9" secondAttribute="trailing" id="pre-62-Y6I"/>
+                <constraint firstItem="Hk6-FP-Zl4" firstAttribute="top" secondItem="75H-gU-AV9" secondAttribute="bottom" constant="2" id="t6n-bS-Du5"/>
+                <constraint firstItem="Hk6-FP-Zl4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tg4-gH-yGm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="416" y="166"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cardtitle" width="2500" height="1875"/>
+    </resources>
+</document>

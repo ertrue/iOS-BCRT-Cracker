@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="resultReporterView" customModule="BCRT_Cracker" customModuleProvider="target">
+            <connections>
+                <outlet property="bankerbar" destination="FHQ-z3-fk7" id="Oy3-Gv-vWz"/>
+                <outlet property="bankerlabel" destination="BhH-ma-OAD" id="dpx-Pi-Dtg"/>
+                <outlet property="pairbar" destination="GIt-Aa-jmR" id="xeH-Ju-8Dm"/>
+                <outlet property="pairlabel" destination="J2Y-1L-8E1" id="AwV-DX-YOh"/>
+                <outlet property="playerbar" destination="uHt-PR-xxx" id="YDC-de-orw"/>
+                <outlet property="playerlabel" destination="YDO-5j-WxX" id="KCO-CE-fau"/>
+                <outlet property="tiebar" destination="JR9-t4-TtL" id="yfr-Ht-amF"/>
+                <outlet property="tielabel" destination="fSB-zB-byP" id="Brw-Bz-Q2p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="USe-LT-yGh">
+                    <rect key="frame" x="0.0" y="100" width="500" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="20" text="Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDO-5j-WxX">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="20"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="20" text="Banker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhH-ma-OAD">
+                            <rect key="frame" x="125" y="0.0" width="125" height="20"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="20" text="Tie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSB-zB-byP">
+                            <rect key="frame" x="250" y="0.0" width="125" height="20"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="20" placeholderIntrinsicHeight="20" text="Pair" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2Y-1L-8E1">
+                            <rect key="frame" x="375" y="0.0" width="125" height="20"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="gnY-6j-2Rl" userLabel="height &gt;= 20"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="d20-lH-GbE">
+                    <rect key="frame" x="0.0" y="0.0" width="500" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HH9-Kh-z1M">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="100"/>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6r-Ui-KHo">
+                            <rect key="frame" x="42" y="0.0" width="41" height="100"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluebar" translatesAutoresizingMaskIntoConstraints="NO" id="uHt-PR-xxx">
+                                    <rect key="frame" x="0.0" y="0.0" width="41" height="100"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                            <constraints>
+                                <constraint firstItem="uHt-PR-xxx" firstAttribute="top" secondItem="T6r-Ui-KHo" secondAttribute="top" id="6fk-Ow-fOw"/>
+                                <constraint firstAttribute="trailing" secondItem="uHt-PR-xxx" secondAttribute="trailing" id="KMJ-oM-g78"/>
+                                <constraint firstAttribute="bottom" secondItem="uHt-PR-xxx" secondAttribute="bottom" id="VH9-Yw-knp"/>
+                                <constraint firstItem="uHt-PR-xxx" firstAttribute="leading" secondItem="T6r-Ui-KHo" secondAttribute="leading" id="odn-pU-qGa"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGN-nr-dqZ">
+                            <rect key="frame" x="83" y="0.0" width="42" height="100"/>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-8I-t2H">
+                            <rect key="frame" x="125" y="0.0" width="42" height="100"/>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1X-KW-heP">
+                            <rect key="frame" x="167" y="0.0" width="41" height="100"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redbar" translatesAutoresizingMaskIntoConstraints="NO" id="FHQ-z3-fk7">
+                                    <rect key="frame" x="0.0" y="0.0" width="41" height="100"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                            <constraints>
+                                <constraint firstItem="FHQ-z3-fk7" firstAttribute="top" secondItem="L1X-KW-heP" secondAttribute="top" id="6VP-0n-gEb"/>
+                                <constraint firstItem="FHQ-z3-fk7" firstAttribute="leading" secondItem="L1X-KW-heP" secondAttribute="leading" id="82z-BZ-QhZ"/>
+                                <constraint firstAttribute="trailing" secondItem="FHQ-z3-fk7" secondAttribute="trailing" id="Qve-RL-lR5"/>
+                                <constraint firstAttribute="bottom" secondItem="FHQ-z3-fk7" secondAttribute="bottom" id="sUy-59-n5m"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHA-Ml-ZgX">
+                            <rect key="frame" x="208" y="0.0" width="42" height="100"/>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Yo-cl-lJ8">
+                            <rect key="frame" x="250" y="0.0" width="42" height="100"/>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Seo-gb-Nbh">
+                            <rect key="frame" x="292" y="0.0" width="41" height="100"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenbar" translatesAutoresizingMaskIntoConstraints="NO" id="JR9-t4-TtL">
+                                    <rect key="frame" x="0.0" y="0.0" width="41" height="100"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                            <constraints>
+                                <constraint firstItem="JR9-t4-TtL" firstAttribute="top" secondItem="Seo-gb-Nbh" secondAttribute="top" id="IA4-9K-Wft"/>
+                                <constraint firstAttribute="bottom" secondItem="JR9-t4-TtL" secondAttribute="bottom" id="d0d-QY-8im"/>
+                                <constraint firstAttribute="trailing" secondItem="JR9-t4-TtL" secondAttribute="trailing" id="lJH-y0-kRj"/>
+                                <constraint firstItem="JR9-t4-TtL" firstAttribute="leading" secondItem="Seo-gb-Nbh" secondAttribute="leading" id="pLS-Hu-yXS"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSG-rJ-Uxc">
+                            <rect key="frame" x="333" y="0.0" width="42" height="100"/>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fG3-Iy-1o7">
+                            <rect key="frame" x="375" y="0.0" width="42" height="100"/>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwu-zG-KqN">
+                            <rect key="frame" x="417" y="0.0" width="41" height="100"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowbar" translatesAutoresizingMaskIntoConstraints="NO" id="GIt-Aa-jmR">
+                                    <rect key="frame" x="0.0" y="0.0" width="41" height="100"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                            <constraints>
+                                <constraint firstItem="GIt-Aa-jmR" firstAttribute="top" secondItem="cwu-zG-KqN" secondAttribute="top" id="A46-s4-mP7"/>
+                                <constraint firstAttribute="trailing" secondItem="GIt-Aa-jmR" secondAttribute="trailing" id="XaR-3X-uh1"/>
+                                <constraint firstItem="GIt-Aa-jmR" firstAttribute="leading" secondItem="cwu-zG-KqN" secondAttribute="leading" id="nPm-Gf-bGU"/>
+                                <constraint firstAttribute="bottom" secondItem="GIt-Aa-jmR" secondAttribute="bottom" id="qsg-pH-UGW"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5g7-Oc-KaK">
+                            <rect key="frame" x="458" y="0.0" width="42" height="100"/>
+                            <animations/>
+                        </view>
+                    </subviews>
+                    <animations/>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAE-rG-HCa">
+                    <rect key="frame" x="8" y="99" width="484" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="HfB-Tp-2l4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.45975760339999999" green="0.70972240389999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="USe-LT-yGh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4vo-9U-yr1"/>
+                <constraint firstItem="d20-lH-GbE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GiP-cg-Npr"/>
+                <constraint firstItem="SAE-rG-HCa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="L6r-3E-9Hm"/>
+                <constraint firstAttribute="bottom" secondItem="USe-LT-yGh" secondAttribute="bottom" id="QGU-Ob-wws"/>
+                <constraint firstItem="SAE-rG-HCa" firstAttribute="centerX" secondItem="USe-LT-yGh" secondAttribute="centerX" id="iIA-9n-eec"/>
+                <constraint firstAttribute="trailing" secondItem="d20-lH-GbE" secondAttribute="trailing" id="lSQ-Ka-0lU"/>
+                <constraint firstItem="SAE-rG-HCa" firstAttribute="bottom" secondItem="USe-LT-yGh" secondAttribute="bottom" constant="-20" id="nDb-Hk-5yY"/>
+                <constraint firstAttribute="trailing" secondItem="USe-LT-yGh" secondAttribute="trailing" id="sfM-pu-bgb"/>
+                <constraint firstItem="USe-LT-yGh" firstAttribute="top" secondItem="d20-lH-GbE" secondAttribute="bottom" id="vF9-QG-YFU"/>
+                <constraint firstItem="d20-lH-GbE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yQp-yg-RCe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="284" y="76"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bluebar" width="30" height="150"/>
+        <image name="greenbar" width="22" height="160"/>
+        <image name="redbar" width="33" height="250"/>
+        <image name="yellowbar" width="30" height="150"/>
+    </resources>
+</document>
