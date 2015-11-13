@@ -5,6 +5,20 @@
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "stretch",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 7,
+          "top" : 5,
+          "right" : 6,
+          "left" : 6
+        }
+      },
       "idiom" : "universal",
       "filename" : "IphoneKeyboardKey_White.png",
       "scale" : "2x"
