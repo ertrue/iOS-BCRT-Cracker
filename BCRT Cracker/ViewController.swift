@@ -10,9 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var cardshowtitle: numberInputerView!
-    @IBOutlet weak var resultreporter: cardPoolStaticView!
-    @IBOutlet weak var cardsstastic: cardPoolStaticView!
+
     
     var cardpool: cardPool?
     var userpref: UserPreference?
